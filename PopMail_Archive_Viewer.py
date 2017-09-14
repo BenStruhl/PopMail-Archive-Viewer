@@ -3,25 +3,10 @@ import os
 
 
 def main():
+    app = gui()
+    app.addLabel("title", "Welecome to appJar")
+    app.setLabelBg("title", "red")
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-if __name__ = "__main__" :
+if __name__ = "__main__":
     main()
