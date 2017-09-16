@@ -12,6 +12,12 @@ def parse_email(email):
     muffled_up_string = str(file.read())
     reformed_string = muffled_up_string.replace("\\xc9", "")
     print(reformed_string)
+    get_destination(reformed_string)
+
+def get_destination(email):
+    email_without_date = str(email.split("To: "))
+
+    print(email_without_date)
 
 if __name__ == "__main__":
     main()
